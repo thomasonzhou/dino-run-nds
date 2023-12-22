@@ -1,4 +1,6 @@
-main.o: /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/main.c \
+graphics.o: \
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/graphics.c \
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/graphics.h \
  /opt/devkitpro/libnds/include/nds.h \
  /opt/devkitpro/libnds/include/nds/libversion.h \
  /opt/devkitpro/libnds/include/nds/ndstypes.h \
@@ -58,8 +60,8 @@ main.o: /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/main.c \
  /opt/devkitpro/libnds/include/nds/arm9/trig_lut.h \
  /opt/devkitpro/libnds/include/nds/arm9/video.h \
  /opt/devkitpro/libnds/include/nds/arm9/videoGL.h \
- /opt/devkitpro/libnds/include/nds/arm9/nand.h \
- /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/graphics.h
+ /opt/devkitpro/libnds/include/nds/arm9/nand.h
+/Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/graphics.h:
 /opt/devkitpro/libnds/include/nds.h:
 /opt/devkitpro/libnds/include/nds/libversion.h:
 /opt/devkitpro/libnds/include/nds/ndstypes.h:
@@ -120,4 +122,3 @@ main.o: /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/main.c \
 /opt/devkitpro/libnds/include/nds/arm9/video.h:
 /opt/devkitpro/libnds/include/nds/arm9/videoGL.h:
 /opt/devkitpro/libnds/include/nds/arm9/nand.h:
-/Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/graphics.h:
