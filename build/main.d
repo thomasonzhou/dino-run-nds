@@ -1,4 +1,4 @@
-main.o: /Users/thomasonzhou/repos/workspace-mac/Template/source/main.c \
+main.o: /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/main.c \
  /opt/devkitpro/libnds/include/nds.h \
  /opt/devkitpro/libnds/include/nds/libversion.h \
  /opt/devkitpro/libnds/include/nds/ndstypes.h \
