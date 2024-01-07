@@ -1,5 +1,6 @@
 #include "graphics.h"
 #include "dino1.h"
+#include "logic/game_state.h"
 
 const unsigned char empty_tile[] = {
     0,0,0,0,0,0,0,0,
@@ -60,7 +61,7 @@ void init_graphics(GameState* game_state){
     init_dino_sprite(game_state);
 }
 
-void update_graphics(GameState *game_state){
+void update_sprite_graphics(GameState *game_state){
     oamSet(&oamMain, 	// oam handler
     0,				// Number of sprite
     game_state->sprite_x, game_state->sprite_y, // Coordinates
@@ -78,6 +79,10 @@ void update_graphics(GameState *game_state){
     swiWaitForVBlank();
     //Update the sprites
     oamUpdate(&oamMain);
+}
+
+void update_graphics(GameState *game_state){
+    update_sprite_graphics(game_state);
 }
 
 
