@@ -36,6 +36,7 @@ int main(void) {
 	#endif
     init_graphics(&game_state);
     init_sound();
+	start_background_music();
 
 	irqEnable(IRQ_TIMER0);
 

@@ -59,7 +59,11 @@ sound.o: /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/sound.c \
  /opt/devkitpro/libnds/include/nds/arm9/trig_lut.h \
  /opt/devkitpro/libnds/include/nds/arm9/video.h \
  /opt/devkitpro/libnds/include/nds/arm9/videoGL.h \
- /opt/devkitpro/libnds/include/nds/arm9/nand.h
+ /opt/devkitpro/libnds/include/nds/arm9/nand.h \
+ /opt/devkitpro/libnds/include/maxmod9.h \
+ /opt/devkitpro/libnds/include/mm_types.h \
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank.h \
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank_bin.h
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/sound.h:
 /opt/devkitpro/libnds/include/nds.h:
 /opt/devkitpro/libnds/include/nds/libversion.h:
@@ -121,3 +125,7 @@ sound.o: /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/sound.c \
 /opt/devkitpro/libnds/include/nds/arm9/video.h:
 /opt/devkitpro/libnds/include/nds/arm9/videoGL.h:
 /opt/devkitpro/libnds/include/nds/arm9/nand.h:
+/opt/devkitpro/libnds/include/maxmod9.h:
+/opt/devkitpro/libnds/include/mm_types.h:
+/Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank.h:
+/Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank_bin.h:

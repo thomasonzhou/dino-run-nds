@@ -62,6 +62,10 @@ main.o: /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/main.cpp \
  /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/graphics.h \
  /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/game_state.h \
  /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/sound.h \
+ /opt/devkitpro/libnds/include/maxmod9.h \
+ /opt/devkitpro/libnds/include/mm_types.h \
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank.h \
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank_bin.h \
  /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/physics.h \
  /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/game_state.h
 /opt/devkitpro/libnds/include/nds.h:
@@ -127,5 +131,9 @@ main.o: /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/main.cpp \
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/graphics.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/game_state.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/sound.h:
+/opt/devkitpro/libnds/include/maxmod9.h:
+/opt/devkitpro/libnds/include/mm_types.h:
+/Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank.h:
+/Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank_bin.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/physics.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/game_state.h:
