@@ -22,8 +22,6 @@ const unsigned char full_tile[] = {
     1,1,1,1,1,1,1,1,
 };
 
-u16* gfx;
-
 void init_red_background(){
 
     REG_DISPCNT = MODE_3_2D | DISPLAY_BG1_ACTIVE;
