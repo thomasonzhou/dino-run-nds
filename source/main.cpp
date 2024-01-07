@@ -1,4 +1,5 @@
-#include <cstdio>
+// #define DEBUG_ON
+
 extern "C" {
 	#include <nds.h>
 	#include <stdio.h>
@@ -7,6 +8,8 @@ extern "C" {
 }
 #include "logic/game_state.h"
 #include "logic/physics.h"
+
+
 
 void printState(GameState* game_state){
     printf("\nGameState: \n");
@@ -20,7 +23,9 @@ GameState game_state;
 
 void physics_ISR() {
     update_physics(&game_state);
+	#ifdef DEBUG_ON
 	printState(&game_state);
+	#endif
 }
 
 int main(void) {
@@ -28,7 +33,9 @@ int main(void) {
 	// irqInit();
 	irqSet(IRQ_TIMER0, &physics_ISR);
     init_physics(&game_state); // A good starting position
+	#ifdef DEBUG_ON
     consoleDemoInit();
+	#endif
     init_graphics(&game_state);
     init_sound();
 
@@ -43,9 +50,6 @@ int main(void) {
     	scanKeys();
     	keys = keysHeld();
 
-    	// if((keys & KEY_RIGHT) && (x < (SCREEN_WIDTH - SPRITE_WIDTH))) x+=2;
-    	// if((keys & KEY_DOWN) && (y < (SCREEN_HEIGHT - SPRITE_HEIGHT))) y+=2;
-    	// if((keys & KEY_LEFT) && (x  > 0)) x-=2;
     	if((keys & KEY_UP || keys & KEY_A) && (game_state.sprite_y  > 0)){
 			jump(&game_state);
 			printf("\njump!");
