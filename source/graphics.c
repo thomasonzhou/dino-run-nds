@@ -1,5 +1,5 @@
 #include "graphics.h"
-#include "007.h"
+#include "dino1.h"
 
 const unsigned char empty_tile[] = {
     0,0,0,0,0,0,0,0,
@@ -51,8 +51,8 @@ void init_dino_sprite(){
     VRAM_B_CR = VRAM_ENABLE | VRAM_B_MAIN_SPRITE_0x06400000;
     oamInit(&oamMain, SpriteMapping_1D_32, false);
     gfx = oamAllocateGfx(&oamMain, SpriteSize_32x32, SpriteColorFormat_256Color);
-    swiCopy(_07Pal, SPRITE_PALETTE, _07PalLen/2);
-    swiCopy(_07Tiles, gfx, _07TilesLen/2);
+    swiCopy(dino1Pal, SPRITE_PALETTE, dino1PalLen/2);
+    swiCopy(dino1Tiles, gfx, dino1TilesLen/2);
 
     int x = 0, y = 0, keys;
 
