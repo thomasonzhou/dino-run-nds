@@ -28,7 +28,7 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 - Game music handled with the [Maxmod library](https://maxmod.devkitpro.org/)
 
 Other Resources used:
-- [Sound file library](https://modarchive.org/index.php?request=view_by_license&query=publicdomain)
+- [Sound file library](https://modarchive.org/index.php?request=view_by_moduleid&query=61361)
 - [Sprite library](https://play.pokemonshowdown.com/sprites/gen1/)
 
 Interesting things I found on the way:
