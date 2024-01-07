@@ -52,22 +52,6 @@ int main(void) {
 		}
 		// update_physics(&game_state);
 
-    	oamSet(&oamMain, 	// oam handler
-    		0,				// Number of sprite
-    		game_state.sprite_x, game_state.sprite_y,			// Coordinates
-    		0,				// Priority
-    		0,				// Palette to use
-    		SpriteSize_32x32,			// Sprite size
-    		SpriteColorFormat_256Color,	// Color format
-    		game_state.sprite_gfx,			// Loaded graphic to display
-    		-1,				// Affine rotation to use (-1 none)
-    		false,			// Double size if rotating
-    		false,			// Hide this sprite
-    		false, false,	// Horizontal or vertical flip
-    		false			// Mosaic
-    		);
-    	swiWaitForVBlank();
-    	//Update the sprites
-		oamUpdate(&oamMain);
+		update_graphics(&game_state);
     }
 }
