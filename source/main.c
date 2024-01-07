@@ -2,13 +2,17 @@
 #include <stdio.h>
 #include "graphics.h"
 #include "sound.h"
+#include "logic/game_state.h"
 
 extern u16* gfx;
 
 int main(void) {
 	
+    GameState game_state;
+    game_state.sprite_x = 20;
+    game_state.sprite_y = 100;
     consoleDemoInit();
-    init_graphics();
+    init_graphics(&game_state);
     init_sound();
 
     printf("\nDino Run NDS\n");
@@ -32,7 +36,7 @@ int main(void) {
     		0,				// Palette to use
     		SpriteSize_32x32,			// Sprite size
     		SpriteColorFormat_256Color,	// Color format
-    		gfx,			// Loaded graphic to display
+    		game_state.sprite_gfx,			// Loaded graphic to display
     		-1,				// Affine rotation to use (-1 none)
     		false,			// Double size if rotating
     		false,			// Hide this sprite

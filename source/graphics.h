@@ -1,9 +1,10 @@
 #include <nds.h>
+#include "logic/game_state.h"
 
 #define LIGHT_RED ARGB16(1, 15, 0, 0)
 #define DARK_RED ARGB16(1, 5, 0, 0)
 
-void init_graphics(void);
+void init_graphics(GameState* game_state);
 
 #define SCREEN_WIDTH	256
 #define	SCREEN_HEIGHT	192

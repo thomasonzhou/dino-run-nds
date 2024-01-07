@@ -47,19 +47,19 @@ void init_red_background(){
     }
 }
 
-void init_dino_sprite(){
+void init_dino_sprite(GameState* game_state){
     VRAM_B_CR = VRAM_ENABLE | VRAM_B_MAIN_SPRITE_0x06400000;
     oamInit(&oamMain, SpriteMapping_1D_32, false);
-    gfx = oamAllocateGfx(&oamMain, SpriteSize_32x32, SpriteColorFormat_256Color);
+    game_state->sprite_gfx = oamAllocateGfx(&oamMain, SpriteSize_32x32, SpriteColorFormat_256Color);
     swiCopy(dino1Pal, SPRITE_PALETTE, dino1PalLen/2);
-    swiCopy(dino1Tiles, gfx, dino1TilesLen/2);
+    swiCopy(dino1Tiles, game_state->sprite_gfx, dino1TilesLen/2);
 
 }
 
-void init_graphics(){
+void init_graphics(GameState* game_state){
 
     init_red_background();
-    init_dino_sprite();
+    init_dino_sprite(game_state);
 }
 
 
