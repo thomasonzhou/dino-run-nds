@@ -12,12 +12,14 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 # Peripherals and features used
 
 ## Timers and Interrupts
+- The physics is updated 60 times a second, based on the state of jumping + applied gravity
 
 ## Graphics and Sprites
-- Dino sprite used as the main character
+- The background is initialized with tile mode using the main engine since it consists of solid colours
+- The dino sprite is used as the main character, taking up another VRAM bank
 
 ## Keypad
-- Press A to start the game/make the sprite jump
+- Press up or A to start the game/make the sprite jump
 
 ## Touchscreen
 
