@@ -23,7 +23,7 @@ const unsigned char full_tile[] = {
     1,1,1,1,1,1,1,1,
 };
 
-void init_red_background(){
+void init_background_main(){
 
     REG_DISPCNT = MODE_3_2D | DISPLAY_BG1_ACTIVE;
     VRAM_A_CR = VRAM_ENABLE | VRAM_A_MAIN_BG;
@@ -55,10 +55,23 @@ void init_dino_sprite(GameState* game_state){
 
 }
 
-void init_graphics(GameState* game_state){
-
-    init_red_background();
+void init_graphics_main(GameState* game_state){
+    init_background_main();
     init_dino_sprite(game_state);
+    REG_POWERCNT ^= POWER_SWAP_LCDS;
+}
+
+void init_graphics_sub(GameState *game_state){
+    REG_DISPCNT_SUB = MODE_0_2D | DISPLAY_BG0_ACTIVE;
+    VRAM_C_CR = VRAM_ENABLE | VRAM_C_SUB_BG;
+
+    BGCTRL_SUB[0] = BG_MAP_BASE(0) | BG_TILE_BASE(1) | BG_32x32 | BG_COLOR_256;
+
+    BG_PALETTE_SUB[0] = DARK_RED;
+
+    swiCopy(empty_tile, (u8*)BG_TILE_RAM_SUB(1), 64);
+
+   
 }
 
 void update_sprite_graphics(GameState *game_state){

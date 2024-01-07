@@ -10,6 +10,6 @@
 #define	SPRITE_WIDTH	32
 #define	SPRITE_HEIGHT	32
 
-void init_graphics(GameState* game_state);
-
+void init_graphics_main(GameState* game_state);
+void init_graphics_sub(GameState* game_state);
 void update_graphics(GameState* game_state);

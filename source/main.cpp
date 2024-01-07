@@ -1,4 +1,4 @@
-#define DEBUG_ON
+// #define DEBUG_ON
 
 extern "C" {
 	#include <nds.h>
@@ -30,11 +30,14 @@ int main(void) {
 
 	irqSet(IRQ_TIMER0, &physics_ISR);
     init_physics(&game_state); // A good starting position
+    init_graphics_main(&game_state);
 	#ifdef DEBUG_ON
     consoleDemoInit();
     printf("\nDino Run NDS\n"); 
+	#else
+	init_graphics_sub(&game_state);
 	#endif
-    init_graphics(&game_state);
+
     init_sound();
 	start_background_music();
 
