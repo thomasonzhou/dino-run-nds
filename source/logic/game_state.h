@@ -6,6 +6,8 @@
 
 typedef struct GameState {
     u16* sprite_gfx; 
+    int sprite_version;
+    
     int sprite_x;
     int sprite_y; 
 
