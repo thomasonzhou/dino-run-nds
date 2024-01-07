@@ -62,7 +62,9 @@ graphics.o: \
  /opt/devkitpro/libnds/include/nds/arm9/videoGL.h \
  /opt/devkitpro/libnds/include/nds/arm9/nand.h \
  /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/game_state.h \
- /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/dino1.h
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/dino1.h \
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/dino2.h \
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/dino3.h
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/graphics.h:
 /opt/devkitpro/libnds/include/nds.h:
 /opt/devkitpro/libnds/include/nds/libversion.h:
@@ -126,3 +128,5 @@ graphics.o: \
 /opt/devkitpro/libnds/include/nds/arm9/nand.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/game_state.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/dino1.h:
+/Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/dino2.h:
+/Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/dino3.h:

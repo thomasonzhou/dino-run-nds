@@ -1,5 +1,7 @@
 #include "graphics.h"
 #include "dino1.h"
+#include "dino2.h"
+#include "dino3.h"
 #include "logic/game_state.h"
 
 const unsigned char empty_tile[] = {
@@ -58,7 +60,7 @@ void init_dino_sprite(GameState* game_state){
 void init_graphics_main(GameState* game_state){
     init_background_main();
     init_dino_sprite(game_state);
-    REG_POWERCNT ^= POWER_SWAP_LCDS;
+    // REG_POWERCNT ^= POWER_SWAP_LCDS;
 }
 
 void init_graphics_sub(GameState *game_state){
