@@ -46,11 +46,10 @@ int main(void) {
     	// if((keys & KEY_RIGHT) && (x < (SCREEN_WIDTH - SPRITE_WIDTH))) x+=2;
     	// if((keys & KEY_DOWN) && (y < (SCREEN_HEIGHT - SPRITE_HEIGHT))) y+=2;
     	// if((keys & KEY_LEFT) && (x  > 0)) x-=2;
-    	if((keys & KEY_UP) && (game_state.sprite_y  > 0)){
+    	if((keys & KEY_UP || keys & KEY_A) && (game_state.sprite_y  > 0)){
 			jump(&game_state);
 			printf("\njump!");
 		}
-		// update_physics(&game_state);
 
 		update_graphics(&game_state);
     }

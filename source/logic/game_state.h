@@ -10,8 +10,9 @@ typedef struct GameState {
     int sprite_y; 
 
     int sprite_vy;
-
     int sprite_jumping;
+
+    int game_started;
 } GameState;
 
 #endif
