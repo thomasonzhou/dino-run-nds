@@ -25,7 +25,7 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 - TODO: once enough food is eaten, evolve to jump higher by tapping the bottom screen
 
 ## Sound
-- Game music handled with the [Maxmod library](https://maxmod.devkitpro.org/)
+- Game music handled with the [Maxmod library](https://maxmod.devkitpro.org/) to loop 4wtudone.it in the background
 
 Other Resources used:
 - [Sound file library](https://modarchive.org/index.php?request=view_by_moduleid&query=61361)
