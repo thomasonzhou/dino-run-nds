@@ -24,7 +24,7 @@ const unsigned char full_tile[] = {
 
 void init_red_background(){
 
-    REG_DISPCNT = MODE_5_2D | DISPLAY_BG1_ACTIVE;
+    REG_DISPCNT = MODE_3_2D | DISPLAY_BG1_ACTIVE;
     VRAM_A_CR = VRAM_ENABLE | VRAM_A_MAIN_BG;
 
     BGCTRL[1] = BG_MAP_BASE(0) | BG_TILE_BASE(1) | BG_32x32 | BG_COLOR_256;
@@ -44,6 +44,13 @@ void init_red_background(){
         }
     }
 }
+
+// init_dino_sprite(){
+//     VRAM_B_CR = VRAM_ENABLE | VRAM_B_MAIN_SPRITE_0x06400000;
+//     oamInit(&oamMain, SpriteMapping_1D_32, false);
+//     gfx = oamAllocateGfx(&oamMain, SpriteSize_64x64, SpriteColorFormat_256Color);
+//     swiCopy(raptor)
+// }
 
 void init_graphics(){
 
