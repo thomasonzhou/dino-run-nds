@@ -14,9 +14,10 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 ## Timers and Interrupts
 
 ## Graphics and Sprites
-- Dino sprite
+- Dino sprite used as the main character
 
 ## Keypad
+- Press A to start the game/make the sprite jump
 
 ## Touchscreen
 
