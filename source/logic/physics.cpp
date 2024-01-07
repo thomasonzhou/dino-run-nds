@@ -17,6 +17,10 @@ void fix_clipping(GameState* game_state) {
     }
 }
 
+void check_collisions(GameState* game_state) {
+    
+}
+
 void update_physics(GameState* game_state) {
     game_state->sprite_y += game_state->sprite_vy;
     if(game_state->sprite_y < BASE_Y){

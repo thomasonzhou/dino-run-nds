@@ -22,11 +22,12 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 - Press up or A to start the game/make the sprite jump
 
 ## Touchscreen
+- TODO: once enough
 
 ## Sound
 - Game music handled with the [Maxmod library](https://maxmod.devkitpro.org/)
 
-Resources used:
+Other Resources used:
 - [Sound file library](https://modarchive.org/index.php?request=view_by_license&query=publicdomain)
 
 Interesting things I found on the way:

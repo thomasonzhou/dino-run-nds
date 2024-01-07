@@ -1,4 +1,4 @@
-// #define DEBUG_ON
+#define DEBUG_ON
 
 extern "C" {
 	#include <nds.h>
@@ -8,8 +8,6 @@ extern "C" {
 }
 #include "logic/game_state.h"
 #include "logic/physics.h"
-
-
 
 void printState(GameState* game_state){
     printf("\nGameState: \n");
@@ -30,18 +28,16 @@ void physics_ISR() {
 
 int main(void) {
 
-	// irqInit();
 	irqSet(IRQ_TIMER0, &physics_ISR);
     init_physics(&game_state); // A good starting position
 	#ifdef DEBUG_ON
     consoleDemoInit();
+    printf("\nDino Run NDS\n"); 
 	#endif
     init_graphics(&game_state);
     init_sound();
 
 	irqEnable(IRQ_TIMER0);
-
-    printf("\nDino Run NDS\n"); 
 
 	int keys;
 
