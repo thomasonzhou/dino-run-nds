@@ -13,7 +13,7 @@ int main(void) {
 
     printf("\nDino Run NDS\n");
 
-    int x = 0, y = 0, keys;
+    int x = 0, y = 100, keys;
 
     while(1){
     	//Read held keys
@@ -40,6 +40,7 @@ int main(void) {
     		false, false,	// Horizontal or vertical flip
     		false			// Mosaic
     		);
+        // printf("\n%d",y);
     	swiWaitForVBlank();
     	//Update the sprites
 		oamUpdate(&oamMain);
