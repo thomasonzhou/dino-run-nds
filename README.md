@@ -18,6 +18,8 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 - The background is initialized with tile mode using the main engine since it consists of solid colours
 - The dino sprite is used as the main character, taking up another VRAM bank
 
+- In debug mode (using the DEBUG_ON define flag in main), the bottom screen is used to view the state of the sprite
+
 ## Keypad
 - Press up or A to start the game/make the sprite jump
 
@@ -26,6 +28,7 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 
 ## Sound
 - Game music handled with the [Maxmod library](https://maxmod.devkitpro.org/) to loop 4wtudone.it in the background
+- TODO: wav sound effect for evolution and item collection
 
 Other Resources used:
 - [Sound file library](https://modarchive.org/index.php?request=view_by_moduleid&query=61361)
