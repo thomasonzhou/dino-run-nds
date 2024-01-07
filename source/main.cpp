@@ -50,6 +50,12 @@ int main(void) {
     	scanKeys();
     	keys = keysHeld();
 
+		// if((keys & KEY_LEFT)){
+		// 	game_state.sprite_x -= 1;
+		// }
+		// if((keys & KEY_RIGHT)){
+		// 	game_state.sprite_x += 1;
+		// }
     	if((keys & KEY_UP || keys & KEY_A) && (game_state.sprite_y  > 0)){
 			jump(&game_state);
 			printf("\njump!");
