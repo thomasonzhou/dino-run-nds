@@ -13,17 +13,16 @@ int main(void) {
 
     printf("\nDino Run NDS\n");
 
-    int x = 0, y = 100, keys;
+    int x = 20, y = 100, keys;
 
     while(1){
     	//Read held keys
     	scanKeys();
     	keys = keysHeld();
 
-    	//Modify position of the sprite accordingly
-    	if((keys & KEY_RIGHT) && (x < (SCREEN_WIDTH - SPRITE_WIDTH))) x+=2;
+    	// if((keys & KEY_RIGHT) && (x < (SCREEN_WIDTH - SPRITE_WIDTH))) x+=2;
     	if((keys & KEY_DOWN) && (y < (SCREEN_HEIGHT - SPRITE_HEIGHT))) y+=2;
-    	if((keys & KEY_LEFT) && (x  > 0)) x-=2;
+    	// if((keys & KEY_LEFT) && (x  > 0)) x-=2;
     	if((keys & KEY_UP) && (y  > 0)) y-=2;
 
     	oamSet(&oamMain, 	// oam handler
@@ -40,7 +39,6 @@ int main(void) {
     		false, false,	// Horizontal or vertical flip
     		false			// Mosaic
     		);
-        // printf("\n%d",y);
     	swiWaitForVBlank();
     	//Update the sprites
 		oamUpdate(&oamMain);
