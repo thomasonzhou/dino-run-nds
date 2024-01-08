@@ -9,6 +9,13 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
     - [for Windows](https://github.com/devkitPro/installer/releases/tag/v3.0.3)
 2. Run make in the root dir to build the Dino_Run.nds file
 3. Run the .nds file on an emulator like [desmume](https://desmume.org/download/) or on an [R4 cartridge with a microSD card and physical DS](https://en.wikipedia.org/wiki/R4_cartridge)
+
+# Gameplay
+
+Avoid grey spikes and collect yellow points. After collecting 3 points, you will evolve to the next level to jump higher and move farther. Hitting a spike will devolve you or take away a life.
+
+Don't worry, you can't lose this game :)
+
 # Peripherals and features used
 
 ## Timers and Interrupts
@@ -17,9 +24,9 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 
 ## Graphics and Sprites
 - The background is initialized with tile mode using the main engine since it consists of solid colours
-    - 2 layers: permanent background, moving spikes
+    - 2 layers: permanent background, moving collidables (update movement with a regular frequency and delete when out of frame)
 - The dino sprite is used as the main character, taking up another VRAM bank
-- The sub engine is used on the bottom screen to evolve the dino when enough items have been collected
+- The sub engine is used on the bottom screen fill in the blank space with the same color for consistency
 
 - In debug mode (using the DEBUG_ON define flag in main), the bottom screen is used to view the state of the sprite
 
@@ -28,7 +35,7 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 - Press left and right to move within the bounds of the screen
 
 ## Touchscreen
-- TODO: once enough items are collected (score reaches threshold), evolve to jump higher by tapping the bottom screen
+- Touch the screen to restart the music
 
 ## Sound
 - Game music handled with the [Maxmod library](https://maxmod.devkitpro.org/) to loop 4wtudone.it in the background
