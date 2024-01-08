@@ -4,8 +4,9 @@
 #include <nds.h>
 #include <stdio.h>
 
+#define SPRITE_SIZE 32
+
 typedef struct GameState {
-    static const int SPRITE_SIZE = 32;
 
     u16* sprite_gfx; 
     int sprite_version;
