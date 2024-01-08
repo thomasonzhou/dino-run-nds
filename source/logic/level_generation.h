@@ -10,4 +10,6 @@ void update_level();
 
 class Level{
     std::deque<Collidable*> collidables;
+    public:
+        void create_spike();
 };
