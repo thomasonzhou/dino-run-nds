@@ -11,5 +11,9 @@ void Obstacle::handle_collision(GameState* game_state){
 }
 
 void::Obstacle::paint_collidable(){
-    
+    printf("painting obstacle\n");
+}
+
+Obstacle::Obstacle(int x1, int y1, int x2, int y2): Collidable(x1, y1, x2, y2){
+    this->paint_collidable();
 }

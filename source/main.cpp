@@ -24,7 +24,7 @@ Level level;
 void physics_ISR() {
     update_physics(&game_state);
 	#ifdef DEBUG_ON
-	printState(&game_state);
+	// printState(&game_state);
 	#endif
 }
 
@@ -69,7 +69,6 @@ int main(void) {
 		}
     	if((keys & KEY_UP || keys & KEY_A) && (game_state.sprite_y  > 0)){
 			jump(&game_state);
-			printf("\njump!");
 		}
 
 		update_graphics(&game_state);
