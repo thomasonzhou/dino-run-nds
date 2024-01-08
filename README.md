@@ -4,10 +4,12 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 
 # Setup
 
+If you just want to play the game, skip to step 3 and use the prebuilt Dino_Run.nds binary in the root directory.
+
 1. Install devkitpro
     - [for OSX and Linux](https://github.com/devkitPro/pacman/releases)
     - [for Windows](https://github.com/devkitPro/installer/releases/tag/v3.0.3)
-2. Run make in the root dir to build the Dino_Run.nds file
+2. Run make in the root dir to build the Dino_Run.nds file. It may be necessary to delete Dino_Run.arm9 and Dino_Run.elf
 3. Run the .nds file on an emulator like [desmume](https://desmume.org/download/) or on an [R4 cartridge with a microSD card and physical DS](https://en.wikipedia.org/wiki/R4_cartridge)
 
 # Gameplay
