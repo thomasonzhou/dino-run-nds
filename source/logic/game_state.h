@@ -6,9 +6,15 @@
 
 #define SPRITE_SIZE 32
 
-enum Direction{
+enum DIRECTION{
     LEFT,
     RIGHT
+};
+
+enum GAME_STATUS{
+    MENU,
+    RUNNING,
+    GAME_OVER
 };
 
 typedef struct GameState {
@@ -22,9 +28,8 @@ typedef struct GameState {
     int sprite_vy;
     int sprite_jumping;
 
-    int sprite_direction;
-
-    int game_started;
+    enum DIRECTION sprite_direction;
+    enum GAME_STATUS game_status;
 } GameState;
 
 #endif

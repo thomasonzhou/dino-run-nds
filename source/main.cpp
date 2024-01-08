@@ -8,6 +8,7 @@ extern "C" {
 }
 #include "logic/game_state.h"
 #include "logic/physics.h"
+#include "logic/level_generation.h"
 
 void printState(GameState* game_state){
     printf("\nGameState: \n");
@@ -40,7 +41,7 @@ int main(void) {
 
     init_sound();
 	start_background_music();
-
+	init_level(&game_state);
 	irqEnable(IRQ_TIMER0);
 
 	int keys;
