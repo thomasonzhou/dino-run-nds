@@ -1,3 +1,6 @@
+#ifndef GRAPHICS_H
+#define GRAPHICS_H
+
 #include <nds.h>
 #include "logic/game_state.h"
 
@@ -15,6 +18,8 @@
 void init_graphics_main(GameState* game_state);
 void init_graphics_sub(GameState* game_state);
 void update_graphics(GameState* game_state);
+
+void clear_collidables();
 
 const unsigned char empty_tile[64] = {
     0,0,0,0,0,0,0,0,
@@ -47,3 +52,5 @@ const unsigned char half_triangle_tile[64] = {
     0,2,2,2,2,2,2,2,
     2,2,2,2,2,2,2,2,
 };
+
+#endif

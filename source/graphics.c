@@ -61,8 +61,7 @@ void init_graphics_sub(GameState *game_state){
     BG_PALETTE_SUB[0] = DARK_RED;
 
     swiCopy(empty_tile, (u8*)BG_TILE_RAM_SUB(1), 64);
-
-   
+ 
 }
 
 void update_sprite_graphics(GameState *game_state){
@@ -89,4 +88,10 @@ void update_graphics(GameState *game_state){
     update_sprite_graphics(game_state);
 }
 
-
+void clear_collidables(){
+   for(int c = 0; c < 32; c++){
+        for(int r = 0; r < 24; r++){
+            BG_MAP_RAM(1)[r * 32 + c] = 0;
+        }
+    } 
+}
