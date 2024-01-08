@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 #define SPRITE_SIZE 32
-#define SPEED_INCREASE 3
+#define SPEED_INCREASE 1
 #define JUMP_INCREASE 1
 
 enum DIRECTION{
