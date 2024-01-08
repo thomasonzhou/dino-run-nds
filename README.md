@@ -23,6 +23,7 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 
 ## Keypad
 - Press up or A to start the game/make the sprite jump
+- Press left and right to move within the bounds of the screen
 
 ## Touchscreen
 - TODO: once enough food is eaten, evolve to jump higher by tapping the bottom screen
