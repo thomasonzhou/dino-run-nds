@@ -5756,16 +5756,15 @@ Linker script and memory map
                 0x02000d0c                Collidable::check_collision(GameState*)
                 0x02000dec                Collidable::get_x2()
                 0x02000dfa                Collidable::shift_left()
- .text          0x02000e18      0x1c6 level_generation.o
+ .text          0x02000e18      0x1c8 level_generation.o
                 0x02000e18                Level::Level(GameState*)
                 0x02000e18                Level::Level(GameState*)
                 0x02000e46                Level::create_spike()
                 0x02000e7c                Level::prune_collidables()
-                0x02000ec8                Level::shift_all_collidables()
-                0x02000f14                Level::paint_all_collidables()
-                0x02000f64                Level::check_all_collisions(GameState*)
-                0x02000fb6                Level::update_level()
- *fill*         0x02000fde        0x2 ff
+                0x02000eca                Level::shift_all_collidables()
+                0x02000f16                Level::paint_all_collidables()
+                0x02000f66                Level::check_all_collisions(GameState*)
+                0x02000fb8                Level::update_level()
  .text          0x02000fe0       0xb0 obstacle.o
                 0x02000fe0                Obstacle::handle_collision(GameState*)
                 0x02001014                Obstacle::paint_collidable()
