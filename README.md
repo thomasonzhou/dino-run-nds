@@ -26,15 +26,16 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 - Press left and right to move within the bounds of the screen
 
 ## Touchscreen
-- TODO: once enough food is eaten, evolve to jump higher by tapping the bottom screen
+- TODO: once enough time passes (score reaches threshold), evolve to jump higher by tapping the bottom screen
 
 ## Sound
 - Game music handled with the [Maxmod library](https://maxmod.devkitpro.org/) to loop 4wtudone.it in the background
-- TODO: wav sound effect for evolution and item collection
+- wav sound effect for hitting spikes, evolution, and item collection
 
 Other Resources used:
 - [Sound file library](https://modarchive.org/index.php?request=view_by_moduleid&query=61361)
 - [Sprite library](https://play.pokemonshowdown.com/sprites/gen1/)
+- [SFX library](https://www.wavsource.com/sfx/sfx.htm)
 
 Interesting things I found on the way:
 - [Basic Pitch (Audio to MIDI AI)](https://basicpitch.spotify.com/)
