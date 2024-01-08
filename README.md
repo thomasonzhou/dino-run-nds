@@ -1,4 +1,6 @@
 ![game_preview](emulator_screenshot.png)
+
+
 This is a side-scrolling runner inspired by [the original Dino Run game](https://en.wikipedia.org/wiki/Dino_Run).
 
 It uses the [libnds](https://github.com/devkitPro/libnds) library to interface with peripherals in C. The game logic is primarily handled in C++.
