@@ -62,7 +62,12 @@ obstacle.o: \
  /opt/devkitpro/libnds/include/nds/arm9/trig_lut.h \
  /opt/devkitpro/libnds/include/nds/arm9/video.h \
  /opt/devkitpro/libnds/include/nds/arm9/videoGL.h \
- /opt/devkitpro/libnds/include/nds/arm9/nand.h
+ /opt/devkitpro/libnds/include/nds/arm9/nand.h \
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/../sound.h \
+ /opt/devkitpro/libnds/include/maxmod9.h \
+ /opt/devkitpro/libnds/include/mm_types.h \
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank.h \
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank_bin.h
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/obstacle.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/collidable.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/game_state.h:
@@ -126,3 +131,8 @@ obstacle.o: \
 /opt/devkitpro/libnds/include/nds/arm9/video.h:
 /opt/devkitpro/libnds/include/nds/arm9/videoGL.h:
 /opt/devkitpro/libnds/include/nds/arm9/nand.h:
+/Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/../sound.h:
+/opt/devkitpro/libnds/include/maxmod9.h:
+/opt/devkitpro/libnds/include/mm_types.h:
+/Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank.h:
+/Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank_bin.h:

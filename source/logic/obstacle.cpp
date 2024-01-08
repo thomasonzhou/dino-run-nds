@@ -2,6 +2,7 @@
 #include "game_state.h"
 
 void Obstacle::handle_collision(GameState* game_state){
+    play_sound_hit_obstacle();
     if(game_state->sprite_version > 1){
         game_state->sprite_version--;
         // update sprite

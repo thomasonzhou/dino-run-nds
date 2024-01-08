@@ -1,6 +1,9 @@
 #include "collidable.h"
 #include "game_state.h"
 #include <nds.h>
+extern "C"{
+    #include "../sound.h"
+}
 
 #define TILE_FLOOR 15
 
