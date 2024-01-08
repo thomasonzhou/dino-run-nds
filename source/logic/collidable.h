@@ -6,7 +6,7 @@ protected:
     int y1;
     int x2;
     int y2;
-    virtual void handle_collision();
+    virtual void handle_collision(GameState* game_state);
 public:
     Collidable(int x1, int y1, int x2, int y2) : x1(x1), y1(y1), x2(x2), y2(y2) {};
     void check_collision(GameState* game_state){
@@ -19,7 +19,7 @@ public:
 
         if((x1 < sprite_x1 && sprite_x1 < x2) || (x1 < sprite_x2 && sprite_x2 < x2)){
             if((y1 < sprite_y1 && sprite_y1 < y2) || (y1 < sprite_y2 && sprite_y2 < y2)){
-                handle_collision();
+                handle_collision(game_state);
             }
         }
     }

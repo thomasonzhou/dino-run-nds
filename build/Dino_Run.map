@@ -281,16 +281,18 @@ Discarded input sections
  .data          0x00000000        0x4 main.o
  .data          0x00000000        0x4 level_generation.o
  .bss           0x00000000        0x0 level_generation.o
- .text          0x00000000        0x0 obstacle.o
+ .text          0x00000000       0x26 obstacle.o
  .data          0x00000000        0x4 obstacle.o
  .bss           0x00000000        0x0 obstacle.o
- .debug_info    0x00000000      0xa81 obstacle.o
- .debug_abbrev  0x00000000      0x229 obstacle.o
+ .rodata        0x00000000        0xc obstacle.o
+ .debug_info    0x00000000      0xc1c obstacle.o
+ .debug_abbrev  0x00000000      0x2de obstacle.o
  .debug_aranges
-                0x00000000       0x18 obstacle.o
- .debug_line    0x00000000      0x2fc obstacle.o
- .debug_str     0x00000000      0x627 obstacle.o
+                0x00000000       0x20 obstacle.o
+ .debug_line    0x00000000      0x33e obstacle.o
+ .debug_str     0x00000000      0x753 obstacle.o
  .comment       0x00000000       0x24 obstacle.o
+ .debug_frame   0x00000000       0x24 obstacle.o
  .ARM.attributes
                 0x00000000       0x27 obstacle.o
  .data          0x00000000        0x4 physics.o
