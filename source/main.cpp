@@ -22,6 +22,7 @@ void printState(GameState* game_state){
 GameState game_state;
 Level level = Level(&game_state);
 
+int count = 0;
 void physics_ISR() {
     update_physics(&game_state);
 	#ifdef DEBUG_ON
@@ -29,7 +30,17 @@ void physics_ISR() {
 	printState(&game_state);
 	#endif
 	#endif
-	level.update_level();
+	count = (count + 1) % 9000;
+
+	if(count % 5 == 0){
+		level.check_all_collisions(&game_state);
+	}
+	if(count % 15 == 0){
+		level.update_level();
+	}
+	if(count % 300 == 0 || count % 660 == 0){
+		level.create_spike();
+	}
 }
 
 int main(void) {

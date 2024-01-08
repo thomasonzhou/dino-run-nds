@@ -17,5 +17,6 @@ public:
     virtual void paint_collidable() = 0;
     virtual ~Collidable() = default;
     int get_x2();
+    void shift_left();
 };
 #endif

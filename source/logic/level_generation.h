@@ -15,10 +15,11 @@ class Level{
     std::deque<Collidable*> collidables;
     int ticks;
     void prune_collidables();
+    void shift_all_collidables();
     void paint_all_collidables();
-    void check_all_collisions(GameState* game_state);
 public:
     Level(GameState* game_state);
+    void check_all_collisions(GameState* game_state);
     void create_spike();
     void update_level();
 };
