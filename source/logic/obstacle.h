@@ -8,6 +8,7 @@ extern "C"{
 #define TILE_FLOOR 15
 
 class Obstacle: public Collidable{
+        int grace_immunity;
         void handle_collision(GameState* game_state);
     public:
         void paint_collidable();

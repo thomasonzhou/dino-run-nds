@@ -6,6 +6,7 @@ extern "C"{
 
 #define TILE_FLOOR 15
 class Collectable: public Collidable{
+        bool collected;
         void handle_collision(GameState* game_state);
     public:
         void paint_collidable();

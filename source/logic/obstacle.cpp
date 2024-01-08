@@ -2,6 +2,10 @@
 #include "game_state.h"
 
 void Obstacle::handle_collision(GameState* game_state){
+    if(this->grace_immunity){
+        this->grace_immunity--;
+        return;
+    } 
     play_sound_hit_obstacle();
     if(game_state->sprite_version > 1){
         game_state->sprite_version--;
@@ -11,6 +15,7 @@ void Obstacle::handle_collision(GameState* game_state){
         printf("GAME OVER\n");
         // game over unhandled for now, friendly game
     }
+    this->grace_immunity = 10;
 }
 
 void::Obstacle::paint_collidable(){
@@ -21,4 +26,5 @@ void::Obstacle::paint_collidable(){
 
 Obstacle::Obstacle(int x1, int y1, int x2, int y2): Collidable(x1, TILE_FLOOR, x2, TILE_FLOOR){
     this->paint_collidable();
+    this->grace_immunity = 0;
 }
