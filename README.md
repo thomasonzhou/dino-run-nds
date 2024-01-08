@@ -28,7 +28,7 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 - Press left and right to move within the bounds of the screen
 
 ## Touchscreen
-- TODO: once enough time passes (score reaches threshold), evolve to jump higher by tapping the bottom screen
+- TODO: once enough items are collected (score reaches threshold), evolve to jump higher by tapping the bottom screen
 
 ## Sound
 - Game music handled with the [Maxmod library](https://maxmod.devkitpro.org/) to loop 4wtudone.it in the background

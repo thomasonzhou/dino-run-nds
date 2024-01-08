@@ -45,7 +45,7 @@ void init_dino_sprite(GameState* game_state){
     swiCopy(dino1Pal, SPRITE_PALETTE, dino1PalLen/2);
     swiCopy(dino1Tiles, game_state->sprite_gfx, dino1TilesLen/2);
 
-    game_state->sprite_version = 1;
+    game_state->sprite_version = 3;
 }
 
 void init_graphics_main(GameState* game_state){

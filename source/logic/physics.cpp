@@ -1,4 +1,5 @@
 #include "physics.h"
+#include "game_state.h"
 
 void init_physics(GameState* game_state) {
     game_state->sprite_x = BASE_X;
@@ -33,6 +34,6 @@ void update_physics(GameState* game_state) {
 void jump(GameState* game_state) {
     if (game_state->sprite_jumping) return;
     game_state->sprite_jumping = 1;
-    game_state->sprite_vy = JUMP_VELOCITY;
+    game_state->sprite_vy = JUMP_VELOCITY - game_state->sprite_version*JUMP_INCREASE;
 }
 
