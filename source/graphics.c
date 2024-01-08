@@ -27,10 +27,10 @@ void init_background_main(){
     }
 
     BGCTRL[2] = BG_MAP_BASE(1) | BG_TILE_BASE(2) | BG_32x32 | BG_COLOR_256;
-    BG_PALETTE[2] = GRAY;
+    BG_PALETTE[2] = LIGHT_GRAY;
 
     swiCopy(half_triangle_tile, (u8*)BG_TILE_RAM(2) + 64, 64);
-    // BG_MAP_RAM(1)[0] = 1;
+    BG_MAP_RAM(1)[0] = 1;
 }
 
 void init_dino_sprite(GameState* game_state){

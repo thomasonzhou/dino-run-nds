@@ -4,6 +4,7 @@
 #define LIGHT_RED ARGB16(1, 15, 0, 0)
 #define DARK_RED ARGB16(1, 5, 0, 0)
 #define GRAY ARGB16(1, 10, 10, 10)
+#define LIGHT_GRAY ARGB16(1, 25, 25, 25)
 
 #define SCREEN_WIDTH	256
 #define	SCREEN_HEIGHT	192
