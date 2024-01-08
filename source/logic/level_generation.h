@@ -13,7 +13,6 @@ extern "C"{
 class Level{
     GameState* game_state;
     std::deque<Collidable*> collidables;
-    int ticks;
     void prune_collidables();
     void shift_all_collidables();
     void paint_all_collidables();
