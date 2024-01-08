@@ -16,6 +16,7 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 
 ## Graphics and Sprites
 - The background is initialized with tile mode using the main engine since it consists of solid colours
+    - 2 layers: permanent background, moving spikes
 - The dino sprite is used as the main character, taking up another VRAM bank
 
 - In debug mode (using the DEBUG_ON define flag in main), the bottom screen is used to view the state of the sprite

@@ -30,8 +30,10 @@ void init_background_main(){
     BG_PALETTE[2] = LIGHT_GRAY;
 
     swiCopy(half_triangle_tile, (u8*)BG_TILE_RAM(2) + 64, 64);
-    BG_MAP_RAM(1)[15*32 + 0] = 1;
-    BG_MAP_RAM(1)[15*32 + 1] = 1 | (1<<10);
+    
+    // test spike
+    // BG_MAP_RAM(1)[15*32 + 0] = 1;
+    // BG_MAP_RAM(1)[15*32 + 1] = 1 | (1<<10);
 }
 
 void init_dino_sprite(GameState* game_state){
