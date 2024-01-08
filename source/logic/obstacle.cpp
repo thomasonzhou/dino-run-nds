@@ -8,6 +8,7 @@ void Obstacle::handle_collision(GameState* game_state){
     } else {
         game_state->game_status = GAME_OVER;
         printf("GAME OVER\n");
+        // game over unhandled for now, friendly game
     }
 }
 

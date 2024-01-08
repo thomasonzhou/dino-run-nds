@@ -1,4 +1,5 @@
 #define DEBUG_ON
+// #define PRINT_STATE
 
 extern "C" {
 	#include <nds.h>
@@ -24,7 +25,9 @@ Level level = Level(&game_state);
 void physics_ISR() {
     update_physics(&game_state);
 	#ifdef DEBUG_ON
-	// printState(&game_state);
+	#ifdef PRINT_STATE
+	printState(&game_state);
+	#endif
 	#endif
 	level.update_level();
 }
