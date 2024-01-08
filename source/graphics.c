@@ -31,6 +31,7 @@ void init_background_main(){
 
     swiCopy(half_triangle_tile, (u8*)BG_TILE_RAM(2) + 64, 64);
     BG_MAP_RAM(1)[0] = 1;
+    BG_MAP_RAM(1)[1] = 1 | (1<<10);
 }
 
 void init_dino_sprite(GameState* game_state){
