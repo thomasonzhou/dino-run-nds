@@ -9,8 +9,12 @@ void Obstacle::handle_collision(GameState* game_state){
     play_sound_hit_obstacle();
     if(game_state->sprite_version > 1){
         game_state->sprite_version--;
+        update_dino_sprite(game_state);
         // update sprite
+    } else if(game_state->items_collected > 0){
+        game_state->items_collected--;
     } else {
+        game_state->items_collected = 0;
         game_state->game_status = GAME_OVER;
         printf("GAME OVER\n");
         // game over unhandled for now, friendly game

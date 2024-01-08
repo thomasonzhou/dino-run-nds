@@ -72,8 +72,8 @@ main.o: /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/main.cpp \
  /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/collidable.h \
  /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/obstacle.h \
  /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/../sound.h \
- /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/collectable.h \
- /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/../graphics.h
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/../graphics.h \
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/collectable.h
 /opt/devkitpro/libnds/include/nds.h:
 /opt/devkitpro/libnds/include/nds/libversion.h:
 /opt/devkitpro/libnds/include/nds/ndstypes.h:
@@ -147,5 +147,5 @@ main.o: /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/main.cpp \
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/collidable.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/obstacle.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/../sound.h:
-/Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/collectable.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/../graphics.h:
+/Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/collectable.h:

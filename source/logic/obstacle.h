@@ -3,6 +3,7 @@
 #include <nds.h>
 extern "C"{
     #include "../sound.h"
+    #include "../graphics.h"
 }
 
 #define TILE_FLOOR 15

@@ -2,6 +2,7 @@
 #include "game_state.h"
 extern "C"{
     #include "../sound.h"
+    #include "../graphics.h"
 }
 
 #define TILE_FLOOR 15

@@ -67,7 +67,9 @@ obstacle.o: \
  /opt/devkitpro/libnds/include/maxmod9.h \
  /opt/devkitpro/libnds/include/mm_types.h \
  /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank.h \
- /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank_bin.h
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank_bin.h \
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/../graphics.h \
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/../logic/game_state.h
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/obstacle.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/collidable.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/game_state.h:
@@ -136,3 +138,5 @@ obstacle.o: \
 /opt/devkitpro/libnds/include/mm_types.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/build/soundbank_bin.h:
+/Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/../graphics.h:
+/Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/../logic/game_state.h:
