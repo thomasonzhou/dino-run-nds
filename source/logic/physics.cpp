@@ -5,6 +5,7 @@ void init_physics(GameState* game_state) {
     game_state->sprite_y = BASE_Y;
     game_state->sprite_vy = 0;
     game_state->sprite_jumping = 0;
+    game_state->sprite_direction = RIGHT;
 
     TIMER_DATA(0) = TIMER_FREQ_1024(60);
     TIMER_CR(0) = TIMER_ENABLE | TIMER_DIV_1024 | TIMER_IRQ_REQ;

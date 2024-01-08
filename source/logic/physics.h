@@ -6,6 +6,7 @@ extern "C"{
 
 #define JUMP_VELOCITY -10
 #define GRAVITY 1
+#define MOVE_SPEED 3
 
 
 void init_physics(GameState* game_state);

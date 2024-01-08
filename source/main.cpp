@@ -52,13 +52,13 @@ int main(void) {
 
 		if((keys & KEY_LEFT)){
 			if(game_state.sprite_x > 0){
-				game_state.sprite_x -= 1;
+				game_state.sprite_x -= MOVE_SPEED;
 				game_state.sprite_direction = LEFT;
 			}
 		}
 		if((keys & KEY_RIGHT)){
 			if(game_state.sprite_x + SPRITE_SIZE < 255){
-				game_state.sprite_x += 1;
+				game_state.sprite_x += MOVE_SPEED;
 				game_state.sprite_direction = RIGHT;
 			}
 		}
