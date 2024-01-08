@@ -19,6 +19,8 @@ void init_graphics_main(GameState* game_state);
 void init_graphics_sub(GameState* game_state);
 void update_graphics(GameState* game_state);
 
+void update_dino_sprite(GameState* game_state);
+
 void clear_collidables();
 
 const unsigned char empty_tile[64] = {

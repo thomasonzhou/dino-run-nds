@@ -45,7 +45,27 @@ void init_dino_sprite(GameState* game_state){
     swiCopy(dino1Pal, SPRITE_PALETTE, dino1PalLen/2);
     swiCopy(dino1Tiles, game_state->sprite_gfx, dino1TilesLen/2);
 
-    game_state->sprite_version = 3;
+    game_state->sprite_version = 1;
+}
+
+void update_dino_sprite(GameState* game_state){
+
+    switch (game_state->sprite_version)
+    {
+        case 1:
+            swiCopy(dino1Pal, SPRITE_PALETTE, dino1PalLen/2);
+            swiCopy(dino1Tiles, game_state->sprite_gfx, dino1TilesLen/2);
+            break;
+        case 2:
+            swiCopy(dino2Pal, SPRITE_PALETTE, dino2PalLen/2);
+            swiCopy(dino2Tiles, game_state->sprite_gfx, dino2TilesLen/2);
+            break;
+        case 3:
+            swiCopy(dino3Pal, SPRITE_PALETTE, dino3PalLen/2);
+            swiCopy(dino3Tiles, game_state->sprite_gfx, dino3TilesLen/2);
+            break;
+            
+    }
 }
 
 void init_graphics_main(GameState* game_state){
