@@ -9,3 +9,7 @@ void Obstacle::handle_collision(GameState* game_state){
         game_state->game_status = GAME_OVER;
     }
 }
+
+void::Obstacle::paint_collidable(){
+    
+}

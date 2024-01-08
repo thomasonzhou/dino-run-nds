@@ -1,4 +1,4 @@
-// #define DEBUG_ON
+#define DEBUG_ON
 
 extern "C" {
 	#include <nds.h>
@@ -42,7 +42,7 @@ int main(void) {
 
     init_sound();
 	start_background_music();
-	init_level(&game_state);
+	init_level(&game_state, &level);
 	irqEnable(IRQ_TIMER0);
 
 	int keys;
