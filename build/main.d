@@ -69,7 +69,8 @@ main.o: /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/main.cpp \
  /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/physics.h \
  /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/game_state.h \
  /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/level_generation.h \
- /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/collidable.h
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/collidable.h \
+ /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/obstacle.h
 /opt/devkitpro/libnds/include/nds.h:
 /opt/devkitpro/libnds/include/nds/libversion.h:
 /opt/devkitpro/libnds/include/nds/ndstypes.h:
@@ -141,3 +142,4 @@ main.o: /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/main.cpp \
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/game_state.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/level_generation.h:
 /Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/collidable.h:
+/Users/thomasonzhou/repos/workspace-mac/Dino_Run/source/logic/obstacle.h:

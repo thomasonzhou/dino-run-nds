@@ -1,6 +1,8 @@
 #include "game_state.h"
 #include "collidable.h"
+#include "obstacle.h"
 #include <deque>
+
 // use a deque to store dynamic levels
 
 // initially hardcode the level (loop through a series of repeated collidables)
