@@ -19,8 +19,8 @@ Don't worry, you can't lose this game :)
 # Peripherals and features used
 
 ## Timers and Interrupts
-- The physics is updated 60 times a second, based on the state of jumping + applied gravity
-- Collisions are tested more frequently, obstacles and items are introduced at regular intervals
+- The physics is updated up to 60 times a second, based on the state of jumping + applied gravity
+- Collisions are tested more frequently(4 times a second), obstacles and items are introduced at regular intervals (5 and 11 seconds, and 6 seconds respectively)
 
 ## Graphics and Sprites
 - The background is initialized with tile mode using the main engine since it consists of solid colours
