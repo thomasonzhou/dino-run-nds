@@ -1,6 +1,7 @@
 #include "game_state.h"
 #include "collidable.h"
 #include "obstacle.h"
+#include "collectable.h"
 #include <deque>
 
 extern "C"{
@@ -20,5 +21,6 @@ public:
     Level(GameState* game_state);
     void check_all_collisions(GameState* game_state);
     void create_spike();
+    void create_item();
     void update_level();
 };

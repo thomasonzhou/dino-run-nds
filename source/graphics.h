@@ -6,8 +6,8 @@
 
 #define LIGHT_RED ARGB16(1, 15, 0, 0)
 #define DARK_RED ARGB16(1, 5, 0, 0)
-#define GRAY ARGB16(1, 10, 10, 10)
 #define LIGHT_GRAY ARGB16(1, 25, 25, 25)
+#define YELLOW ARGB16(1, 31, 27, 23)
 
 #define SCREEN_WIDTH	256
 #define	SCREEN_HEIGHT	192
@@ -51,6 +51,17 @@ const unsigned char half_triangle_tile[64] = {
     0,0,2,2,2,2,2,2,
     0,2,2,2,2,2,2,2,
     2,2,2,2,2,2,2,2,
+};
+
+const unsigned char quarter_circle_tile[64] = {
+    0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,3,
+    0,0,0,0,0,3,3,3,
+    0,0,0,0,3,3,3,3,
+    0,0,0,0,3,3,3,3,
+    0,0,0,3,3,3,3,3,
 };
 
 #endif

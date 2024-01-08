@@ -31,7 +31,6 @@ void physics_ISR() {
 	#endif
 	#endif
 	count = (count + 1) % 9000;
-
 	if(count % 5 == 0){
 		level.check_all_collisions(&game_state);
 	}
@@ -40,6 +39,9 @@ void physics_ISR() {
 	}
 	if(count % 300 == 0 || count % 660 == 0){
 		level.create_spike();
+	}
+	else if(count % 360 == 0){
+		level.create_item();
 	}
 }
 

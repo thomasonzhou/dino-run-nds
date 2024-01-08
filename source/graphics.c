@@ -28,8 +28,10 @@ void init_background_main(){
 
     BGCTRL[2] = BG_MAP_BASE(1) | BG_TILE_BASE(2) | BG_32x32 | BG_COLOR_256;
     BG_PALETTE[2] = LIGHT_GRAY;
+    BG_PALETTE[3] = YELLOW;
 
     swiCopy(half_triangle_tile, (u8*)BG_TILE_RAM(2) + 64, 64);
+    swiCopy(quarter_circle_tile, (u8*)BG_TILE_RAM(2) + 64*2, 64);
     
     // test spike
     // BG_MAP_RAM(1)[15*32 + 0] = 1;
