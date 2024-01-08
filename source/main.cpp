@@ -19,6 +19,7 @@ void printState(GameState* game_state){
 }
 
 GameState game_state;
+Level level;
 
 void physics_ISR() {
     update_physics(&game_state);
@@ -50,6 +51,9 @@ int main(void) {
     	//Read held keys
     	scanKeys();
     	keys = keysHeld();
+		if(keys){
+			game_state.game_status = RUNNING;
+		}
 
 		if((keys & KEY_LEFT)){
 			if(game_state.sprite_x > 0){
