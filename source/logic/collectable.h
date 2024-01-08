@@ -1,6 +1,5 @@
 #include "collidable.h"
 #include "game_state.h"
-
 class Collectable: public Collidable{
     void handle_collision(GameState* game_state);
 public:

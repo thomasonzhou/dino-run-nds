@@ -7,11 +7,12 @@ void Obstacle::handle_collision(GameState* game_state){
         // update sprite
     } else {
         game_state->game_status = GAME_OVER;
+        printf("GAME OVER\n");
     }
 }
 
 void::Obstacle::paint_collidable(){
-    printf("painting obstacle\n");
+    // printf("painting obstacle\n");
     BG_MAP_RAM(1)[this->y1*32 + this->x1] = 1;
     BG_MAP_RAM(1)[this->y2*32 + this->x2] = 1 | (1<<10);
 }

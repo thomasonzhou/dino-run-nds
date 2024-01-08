@@ -11,11 +11,14 @@ extern "C"{
 
 // initially hardcode the level (loop through a series of repeated collidables)
 class Level{
+    GameState* game_state;
     std::deque<Collidable*> collidables;
-    public:
-        void create_spike();
-        void update_level();
+    int ticks;
+    void prune_collidables();
+    void paint_all_collidables();
+    void check_all_collisions(GameState* game_state);
+public:
+    Level(GameState* game_state);
+    void create_spike();
+    void update_level();
 };
-
-void init_level(GameState* game_state, Level* level);
-void update_level();

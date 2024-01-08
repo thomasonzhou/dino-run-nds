@@ -6,7 +6,7 @@
 
 class Obstacle: public Collidable{
         void handle_collision(GameState* game_state);
-        void paint_collidable();
     public:
+        void paint_collidable();
         Obstacle(int x1, int y1, int x2, int y2);
 };

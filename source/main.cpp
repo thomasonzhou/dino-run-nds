@@ -19,13 +19,14 @@ void printState(GameState* game_state){
 }
 
 GameState game_state;
-Level level;
+Level level = Level(&game_state);
 
 void physics_ISR() {
     update_physics(&game_state);
 	#ifdef DEBUG_ON
 	// printState(&game_state);
 	#endif
+	level.update_level();
 }
 
 int main(void) {
@@ -42,7 +43,6 @@ int main(void) {
 
     init_sound();
 	start_background_music();
-	init_level(&game_state, &level);
 	irqEnable(IRQ_TIMER0);
 
 	int keys;
