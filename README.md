@@ -13,11 +13,13 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 
 ## Timers and Interrupts
 - The physics is updated 60 times a second, based on the state of jumping + applied gravity
+- Collisions are tested more frequently, obstacles and items are introduced at regular intervals
 
 ## Graphics and Sprites
 - The background is initialized with tile mode using the main engine since it consists of solid colours
     - 2 layers: permanent background, moving spikes
 - The dino sprite is used as the main character, taking up another VRAM bank
+- The sub engine is used on the bottom screen to evolve the dino when enough items have been collected
 
 - In debug mode (using the DEBUG_ON define flag in main), the bottom screen is used to view the state of the sprite
 
@@ -30,7 +32,7 @@ It uses the [libnds](https://github.com/devkitPro/libnds) library to interface w
 
 ## Sound
 - Game music handled with the [Maxmod library](https://maxmod.devkitpro.org/) to loop 4wtudone.it in the background
-- wav sound effect for hitting spikes, evolution, and item collection
+- wav sound effects for hitting spikes, evolution, and item collection
 
 Other Resources used:
 - [Sound file library](https://modarchive.org/index.php?request=view_by_moduleid&query=61361)
