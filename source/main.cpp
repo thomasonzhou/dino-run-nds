@@ -1,5 +1,5 @@
-#define DEBUG_ON
-// #define PRINT_STATE
+// #define DEBUG_ON
+#define PRINT_STATE
 
 extern "C" {
 	#include <nds.h>
@@ -62,11 +62,14 @@ int main(void) {
 	irqEnable(IRQ_TIMER0);
 
 	int keys;
+	touchPosition touch;
 
     while(1){
     	//Read held keys
     	scanKeys();
     	keys = keysHeld();
+		touchRead(&touch);
+
 		if(keys){
 			game_state.game_status = RUNNING;
 		}
@@ -85,6 +88,10 @@ int main(void) {
 		}
     	if((keys & KEY_UP || keys & KEY_A) && (game_state.sprite_y  > 0)){
 			jump(&game_state);
+		}
+
+		if(touch.px || touch.py){
+			start_background_music();
 		}
 
 		update_graphics(&game_state);
