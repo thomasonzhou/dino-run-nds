@@ -6,6 +6,11 @@
 
 #define SPRITE_SIZE 32
 
+enum Direction{
+    LEFT,
+    RIGHT
+};
+
 typedef struct GameState {
 
     u16* sprite_gfx; 
@@ -16,6 +21,8 @@ typedef struct GameState {
 
     int sprite_vy;
     int sprite_jumping;
+
+    int sprite_direction;
 
     int game_started;
 } GameState;

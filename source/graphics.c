@@ -89,7 +89,7 @@ void update_sprite_graphics(GameState *game_state){
     -1,				// Affine rotation to use (-1 none)
     false,			// Double size if rotating
     false,			// Hide this sprite
-    false, false,	// Horizontal or vertical flip
+    (game_state->sprite_direction) == LEFT, false,	// Horizontal or vertical flip
     false			// Mosaic
     );
     swiWaitForVBlank();
