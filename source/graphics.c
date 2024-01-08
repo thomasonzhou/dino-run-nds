@@ -4,30 +4,9 @@
 #include "dino3.h"
 #include "logic/game_state.h"
 
-const unsigned char empty_tile[] = {
-    0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,
-};
-const unsigned char full_tile[] = {
-    1,1,1,1,1,1,1,1,
-    1,1,1,1,1,1,1,1,
-    1,1,1,1,1,1,1,1,
-    1,1,1,1,1,1,1,1,
-    1,1,1,1,1,1,1,1,
-    1,1,1,1,1,1,1,1,
-    1,1,1,1,1,1,1,1,
-    1,1,1,1,1,1,1,1,
-};
-
 void init_background_main(){
 
-    REG_DISPCNT = MODE_3_2D | DISPLAY_BG1_ACTIVE;
+    REG_DISPCNT = MODE_3_2D | DISPLAY_BG1_ACTIVE | DISPLAY_BG2_ACTIVE;
     VRAM_A_CR = VRAM_ENABLE | VRAM_A_MAIN_BG;
 
     BGCTRL[1] = BG_MAP_BASE(0) | BG_TILE_BASE(1) | BG_32x32 | BG_COLOR_256;
@@ -46,6 +25,11 @@ void init_background_main(){
             BG_MAP_RAM(0)[r * 32 + c] = 1;
         }
     }
+
+    BGCTRL[2] = BG_MAP_BASE(1) | BG_TILE_BASE(2) | BG_32x32 | BG_COLOR_256;
+    BG_PALETTE[2] = GRAY;
+
+    // BG_MAP_RAM(1) = 
 }
 
 void init_dino_sprite(GameState* game_state){
