@@ -41,6 +41,11 @@ Don't worry, you can't lose this game :)
 - Game music handled with the [Maxmod library](https://maxmod.devkitpro.org/) to loop 4wtudone.it in the background
 - wav sound effects for hitting spikes, evolution, and item collection
 
+# Extensions
+An additional playable character can be added by creating another instance of GameState, potentially with a different set of sprites.
+
+# Attribution
+
 Other Resources used:
 - [Sound file library](https://modarchive.org/index.php?request=view_by_moduleid&query=61361)
 - [Sprite library](https://play.pokemonshowdown.com/sprites/gen1/)
