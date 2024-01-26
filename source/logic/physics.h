@@ -1,3 +1,6 @@
+#ifndef PHYSICS_H
+#define PHYSICS_H
+
 extern "C"{
     #include "game_state.h"
 }
@@ -12,3 +15,4 @@ extern "C"{
 void init_physics(GameState* game_state);
 void update_physics(GameState* game_state);
 void jump(GameState* game_state);
+#endif

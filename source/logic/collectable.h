@@ -1,3 +1,6 @@
+#ifndef COLLECTABLE_H
+#define COLLECTABLE_H
+
 #include "collidable.h"
 #include "game_state.h"
 extern "C"{
@@ -13,3 +16,4 @@ class Collectable: public Collidable{
         void paint_collidable();
         Collectable(int x1, int y1, int x2, int y2);
 };
+#endif

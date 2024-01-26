@@ -1,3 +1,6 @@
+#ifndef LEVEL_GENERATION_H
+#define LEVEL_GENERATION_H
+
 #include "game_state.h"
 #include "collidable.h"
 #include "obstacle.h"
@@ -24,3 +27,4 @@ public:
     void create_item();
     void update_level();
 };
+#endif

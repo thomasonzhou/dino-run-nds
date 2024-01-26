@@ -36,4 +36,3 @@ void jump(GameState* game_state) {
     game_state->sprite_jumping = 1;
     game_state->sprite_vy = JUMP_VELOCITY - game_state->sprite_version*JUMP_INCREASE;
 }
-
