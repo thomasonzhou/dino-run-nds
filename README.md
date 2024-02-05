@@ -31,7 +31,7 @@ Don't worry, you can't lose this game :)
 - The background is initialized with tile mode using the main engine since it consists of solid colours
     - 2 layers: permanent background, moving collidables (update movement with a regular frequency and delete when out of frame)
 - The dino sprite is used as the main character, taking up another VRAM bank
-- The sub engine is used on the bottom screen fill in the blank space with the same color for consistency
+- The sub engine is used on the bottom screen to fill in the blank space with the same color for consistency
 
 - In debug mode (using the DEBUG_ON define flag in main), the bottom screen is used to view the state of the sprite
 
