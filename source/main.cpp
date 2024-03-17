@@ -1,5 +1,4 @@
 // #define DEBUG_ON
-#define PRINT_STATE
 
 extern "C" {
 	#include <nds.h>
@@ -11,6 +10,7 @@ extern "C" {
 #include "logic/physics.h"
 #include "logic/level_generation.h"
 
+# ifdef DEBUG_ON
 void printState(GameState* game_state){
     printf("\nGameState: \n");
     printf("sprite_x: %d\n", game_state->sprite_x);
@@ -18,6 +18,7 @@ void printState(GameState* game_state){
     printf("sprite_vy: %d\n", game_state->sprite_vy);
     printf("sprite_jumping: %d\n", game_state->sprite_jumping);
 }
+#endif
 
 GameState game_state;
 Level level = Level(&game_state);
@@ -26,9 +27,7 @@ int count = 0;
 void physics_ISR() {
     update_physics(&game_state);
 	#ifdef DEBUG_ON
-	#ifdef PRINT_STATE
 	printState(&game_state);
-	#endif
 	#endif
 	count = (count + 1) % 9000;
 	if(count % 5 == 0){
