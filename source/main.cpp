@@ -47,16 +47,16 @@ void physics_ISR() {
 int main(void) {
 
 	irqSet(IRQ_TIMER0, &physics_ISR);
-    init_physics(&game_state); // A good starting position
-    init_graphics_main(&game_state);
+	init_physics(&game_state); // A good starting position
+	init_graphics_main(&game_state);
 	#ifdef DEBUG_ON
-    consoleDemoInit();
-    printf("\nDino Run NDS\n"); 
+	consoleDemoInit();
+	printf("\nDino Run NDS\n"); 
 	#else
 	init_graphics_sub(&game_state);
 	#endif
 
-    init_sound();
+	init_sound();
 	start_background_music();
 	irqEnable(IRQ_TIMER0);
 
